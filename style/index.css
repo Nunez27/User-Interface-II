@@ -36,14 +36,33 @@ h1{
     font-size: 2em;
 }
 
+button{
+    padding: 1%;
+    font-size: 1.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    /* position: fixed; */
 }
 
 .top-section {
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -56,6 +75,8 @@ h1{
     top: 250px;
     z-index: 1;
     text-align: center;
+    font-size: 8rem;
+    color: red;
 }
 
 .image-gallery {
@@ -76,7 +97,6 @@ h1{
     margin: 15px;
 }
 
-footer {}
 
 .top-left {
     display: flex;
@@ -90,3 +110,29 @@ footer {}
 
 .box > p {
 margin-top: 5px;}
+
+/* Tablet default */
+@media(max-width: 800px){
+    .header {
+        display:flex;
+        flex-direction: column;
+        /* position: fixed;
+        justify-content: center;
+        align-content: center;
+        text-align: center; */
+
+    }
+    .image-gallery{
+        align-items: center;
+        justify-content: center;
+    }
+    .top-content{
+        top: 160px;
+    }
+}
+
+@media(max-width: 500px){
+    .top-content{
+        font-size: 4.5rem;
+    }
+}
